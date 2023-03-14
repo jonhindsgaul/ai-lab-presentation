@@ -46,14 +46,13 @@
 					<section>
 						<h2>Hvordan udvikler man en AI model?</h2>
 					</section>
+					<section class="fragments">
+						<h2>Hvordan anvendes AI modeller?</h2>
+					</section>
 				</section>
 
 
 				<section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
-					<section>
-						<h2>Hvordan anvendes AI modeller?</h2>
-					</section>
-
 					<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
 						<h2>Kombinér AI modeller</h2>
 						<p>Flere modeller kan anvendes sammen, for at skabe mere avancerede programmer og services</p>
@@ -134,9 +133,11 @@
 							Mange AI modeller udstilles igennem API end-points, dvs. et link på internettet.
 						</p>
 						<p class="fragment">Et API end-point kan anvendes af de fleste programmeringssprog.</p>
-						<p class="fragment">Nogen programmeringssprog inkluderer også deres egen SDK.</p>
+						<p class="fragment">Til programmeringssprog findes der en SDK.</p>
 					</section>
+				</section>
 
+				<section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
 					<section data-auto-animate id="fragments">
 						<h2 data-id="code-title">
 							OpenAI's SDK til Python
@@ -171,15 +172,26 @@
 
 					<section>
 						<h2>For dokumentation</h2>
-						<a href="https://platform.openai.com/docs/api-reference/introduction">OpenAI</a>
+						<a href="https://platform.openai.com/docs/api-reference/introduction">OpenAI SDK</a>
+						<a href="https://platform.openai.com/docs/models/overview">OpenAI modeller</a>
 					</section>
 				</section>
+
+
+				<section>
+					<section>
+						<h2>Azure</h2>
+						
+					</section>
+
+				</section>
+
 
 				<section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
 					<section id="fragments">
 						<h2>Opgaverne</h2>
 						<p>I dag handler det om at arbejde med eksisterende modeller, så vi kan se hvordan de virker.</p>
-						<p class="fragment">Fokus er alene på anvendelse, og der vil ikke være behov for skrive meget kode, men for at forstå koden!</p>
+						<p class="fragment">Fokus er på anvendelse, og der vil ikke være behov for at skrive meget kode, men for at forstå koden!</p>
 					</section>
 				</section>
 
@@ -218,12 +230,12 @@
 						</pre>
 						<p>Packages:</p>
 						<ul>
-							<li>openai</li>
-							<li>dotenv</li>
+							<li>small openai</li>
+							<li>python-dotenv</li>
 							<li>azure-cognitiveservices-speech</li>
 							<li>azure-cognitiveservices-vision-computervision</li>
-							<li>glob</li>
-							<li>urllib</li>
+							<li>glob2</li>
+							<li>urllib3</li>
 							<li>uuid</li>
 						</ul>
 					</section>
@@ -236,16 +248,47 @@
 							<img style="background: rgba(255,255,255,0.1); cursor: pointer;" height="100" data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/OpenAI_Logo.svg/1200px-OpenAI_Logo.svg.png">
 						</a>
 					</section>
+					<section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
+						<h2>Find API nøglerne</h2>
+						<ol>
+							<li style="font-size: 15px;">Login på OpenAI platformen <a href="http://platform.openai.com/">her</a></li>
+							<li style="font-size: 15px;">Tryk i din profil oppe i højre hjørne (billede)</li>
+							<li style="font-size: 15px;">Tryk "Create new secrect key"</li>
+						</ol>
+						<img src="media/img/openai-api.png" height="500" alt="">
+					</section>
+
+					<section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
+						<h2>Huske at gemme jeres API key</h2>
+						<img src="media/img/openai-apikey.png" alt="">
+					</section>
 				</section>
+
+
 
 				<section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
 					<section>
 						<h2>Download repository</h2>
-						<a href="link">HER!</a>
+						<div style="display: flex; justify-content: space-between; margin-top: 1.2rem;">
+							<div>
+								<h4>Github</h4>
+								<a href="https://github.com/jonhindsgaul/ai-lab">
+									<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="200" alt="Github logo" height="200">
+								</a>
+							</div>
+							<img src="https://media.tenor.com/zP8THQcabS8AAAAC/gordon-ramsay-choice.gif" alt="">
+							<div>
+								<h4>Zip-fil</h4>
+								<a href="https://github.com/jonhindsgaul/ai-lab/archive/refs/heads/main.zip">
+									<img src="https://cdn-icons-png.flaticon.com/256/28/28814.png" alt="" width="200" style="background-color: white;">
+								</a>
+							</div>
+						</div>
 					</section>
 					<section>
 						<h2>Sådan er opgaverne organiseret</h2>
 						<img src="media/img/python-opsætning.png" alt="">
+						<p><small>I skal selv oprette filen .env</small></p>
 					</section>
 				</section>
 
@@ -292,7 +335,7 @@
 						<h2>Instruktioner</h2>
 						<p>Der skal bygges følgende komponenter til Bot Pal</p>
 						<ol>
-							<li>Forespørg input</li>
+							<li>Forespørg brugeren et input</li>
 							<li>Brug DALL-E API</li>
 							<li>Gem billede til fil</li>
 							<li>Tag og analysér billedet med Azure Computer Vision</li>
@@ -314,8 +357,8 @@
 					<section id="fragments" data-transition="concave">
 						<h2>Instruktioner</h2>
 						<ol>
-							<li>Vælg mappe med repo</li>
-							<li>Indlæs alle relevant filer i mappe</li>
+							<li>Vælg mappe med filer, som skal dokumenteres</li>
+							<li>Indlæs alle relevante filer fra mappen</li>
 							<li>For hver fil, brug openai til at skrive dokumentation</li>
 							<li>Gem dokumentationen i markdown i en eller flere filer</li>
 							<li class="fragment">Indbyg program i Azure DevOps release pipeline</li>
@@ -335,6 +378,10 @@
 
 				<section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
 					<img src="https://gifdb.com/images/high/jimmy-fallon-so-do-it-9ldyvpw7lfypufo9.gif" alt="">
+				</section>
+
+				<section data-background="https://openaicom.imgix.net/c3ca91b1-f41d-4ba0-84b2-84b2b9c0530e/dall-e-api-now-available-in-public-beta.jpg?fm=auto&auto=compress,format&fit=min&rect=,,,&w=2560&h=2560">
+
 				</section>
 
 				<section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
@@ -377,13 +424,17 @@
 				"Did you know that GitHub Copilot is powered by OpenAI?",
 				"When will dinner arrive...?",
 				"AI models are so cool!",
+				"What happens if I use the AI generated tags for my AI generated image, to create a new AI generated image?",
 				"Is this phrase generated by OpenAI?",
 				"Technically, OpenAI generated these messages through GitHub Copilot",
 				"I have been looking at these messages for a while now...",
 				"Code code code...",
+				"Ainception is a term used to describe the concept of an AI creating another AI",
 				"What is the meaning of life?",
+				"I can now use Best Pal to answer this question",
 				"Will I retire before ChatGPT 7?",
 				"Or will I retire because of ChatGPT 7?",
+				"If an AI model can feel sad, can it also feel hungry?",
 			];
 
 			let phraseIndex = 0;
