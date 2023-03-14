@@ -22,7 +22,8 @@
 						<h2 class="color-change">Hello there</h2>
 					</div>
 					
-					<p><small>Data Lab - Let's build Siri</small></p>
+					<p><small>Data Lab</small></p>
+					<p>Let's build Siri</p>
 				</section>
 
 				<section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
@@ -69,6 +70,11 @@
 							<div data-id="box3" data-auto-animate-delay="0.2" style="background: yellow; width: 150px; height: 100px; margin: 10px; border-radius: 5px;"></div>
 						</div>
 						<p style="margin-top: 20px;">Hvad skal man bruge til Siri?</p>
+						<ol style="font-size: 15px;" id="fragments">
+							<li class="fragment">Noget der kan forstå tale</li>
+							<li class="fragment">Noget der kan svare på spørgsmål</li>
+							<li class="fragment">Noget der kan genere tale</li>
+						</ol>
 
 					</section>
 					<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
@@ -129,11 +135,9 @@
 					
 
 					<section id="fragments">
-						<p>
-							Mange AI modeller udstilles igennem API end-points, dvs. et link på internettet.
-						</p>
+						<p>Mange AI modeller udstilles igennem API end-points, dvs. et link på internettet.</p>
 						<p class="fragment">Et API end-point kan anvendes af de fleste programmeringssprog.</p>
-						<p class="fragment">Til programmeringssprog findes der en SDK.</p>
+						<p class="fragment">Til mange programmeringssprog findes der en SDK.</p>
 					</section>
 				</section>
 
@@ -168,6 +172,7 @@
 								</script>
 							</code>
 						</pre>
+						<a class="fragment" href="https://platform.openai.com/docs/api-reference/completions/create">Documentation</a>
 					</section>
 
 					<section>
@@ -177,25 +182,6 @@
 					</section>
 				</section>
 
-
-				<section>
-					<section>
-						<h2>Azure</h2>
-						
-					</section>
-
-				</section>
-
-
-				<section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
-					<section id="fragments">
-						<h2>Opgaverne</h2>
-						<p>I dag handler det om at arbejde med eksisterende modeller, så vi kan se hvordan de virker.</p>
-						<p class="fragment">Fokus er på anvendelse, og der vil ikke være behov for at skrive meget kode, men for at forstå koden!</p>
-					</section>
-				</section>
-
-
 				<section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
 					<h2>Opsætning</h2>
 				</section>
@@ -204,14 +190,15 @@
 
 					<section>
 						<h2>Setup Python</h2>
-						<a href="#/9/1" class="navigate-down">
-							<img class="r-frame" style="background: rgba(255,255,255,0.1);" width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow">
+						<a href="#/8/1" class="navigate-down">
+							<img src="https://www.python.org/static/community_logos/python-logo-master-v3-TM.png" alt="Python logo" height="200">
 						</a>
+
 					</section>
 					<section>
 						<h2>Click to install Python</h2>
 						<a href="https://www.python.org/downloads/" style="cursor: pointer;">
-							<img src="https://www.python.org/static/community_logos/python-logo-master-v3-TM.png" alt="Python logo" height="200">
+							<img class="r-frame" style="background: rgba(255,255,255,0.1);" width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow">
 						</a>
 					</section>
 					<section>
@@ -230,7 +217,7 @@
 						</pre>
 						<p>Packages:</p>
 						<ul>
-							<li>small openai</li>
+							<li>openai</li>
 							<li>python-dotenv</li>
 							<li>azure-cognitiveservices-speech</li>
 							<li>azure-cognitiveservices-vision-computervision</li>
@@ -286,13 +273,49 @@
 						</div>
 					</section>
 					<section>
-						<h2>Sådan er opgaverne organiseret</h2>
+						<h2>En project mappe har følgende struktur</h2>
 						<img src="media/img/python-opsætning.png" alt="">
 						<p><small>I skal selv oprette filen .env</small></p>
 					</section>
+
+					<section>
+						<h2>Opsæt environment fil</h2>
+						<p>I .env filen, skal i oprette følgende variable. OpenAI key skal i selv oprette. COV/COG keys får I tildelt.</p>
+						<pre data-id="code-animation">
+							<code class="hljs python" data-trim data-line-numbers="1-8">
+								<script type="text/template" style="font-size: 10px;">					
+									COG_SERVICE_KEY=your_cognitive_services_key
+									COG_SERVICE_REGION=westeurope
+
+									OPENAI_API_KEY=your_api_key
+
+									COV_SERVICE_KEY=your_computer_vision_key
+									COV_SERVICE_REGION=westeurope
+									COV_SERVICE_ENDPOINT=https://cvsirilab.cognitiveservices.azure.com
+								</script>
+							</code>
+						</pre>
+					</section>
+
+					<section>
+						<h2>I skal kunne skrive kode, <br> og teste kode</h2>
+						<p>... som kan håndtere Python notebook (.ipynb) filer</p>
+						<ol>
+							<li>VS Code</li>
+							<li>Jupyter notebooks</li>
+							<li>Jeres egen foretrukne</li>
+						</ol>
+					</section>
+
 				</section>
 
-
+				<section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
+					<section id="fragments">
+						<h2>Opgaverne</h2>
+						<p>I dag handler det om at arbejde med eksisterende modeller, så vi kan se hvordan de virker.</p>
+						<p class="fragment">Fokus er på anvendelse, og der vil ikke være behov for at skrive meget kode, men for at forstå koden!</p>
+					</section>
+				</section>
 
 				<section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
 					<section 
@@ -303,7 +326,7 @@
 						
 						<h2>Bot Pal</h2>
 						<p>If you don't have friend...</p>
-						<a href="#/10/1" class="navigate-down">
+						<a href="#/11/1" class="navigate-down">
 							<img class="r-frame" style="background: rgba(255,255,255,0.1);" width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow">
 						</a>
 						<p id="fragment">...  create one!</p>
@@ -325,15 +348,15 @@
 						data-transition="zoom"
 						>
 						
-						<a href="#/11/1" class="navigate-down">
+						<a href="#/12/1" class="navigate-down">
 							<img class="r-frame" style="background: rgba(255,255,255,0.1);" width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow">
 						</a>
 						<h2 style="color: black">Bright Pixel</h2>
-						<p style="color: black">Create images!</p>
+						<p style="color: black">Create images! <br> And analyse them!</p>
 					</section>
 					<section data-transition="zoom">
 						<h2>Instruktioner</h2>
-						<p>Der skal bygges følgende komponenter til Bot Pal</p>
+						<p>Der skal bygges følgende komponenter til Bright Pixel</p>
 						<ol>
 							<li>Forespørg brugeren et input</li>
 							<li>Brug DALL-E API</li>
@@ -350,7 +373,7 @@
 						>
 						<h2>Blue Print</h2>
 						<p>Automatically create documentation for your code projects</p>
-						<a href="#/12/1" class="navigate-down">
+						<a href="#/13/1" class="navigate-down">
 							<img class="r-frame" style="background: rgba(255,255,255,0.1);" width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow">
 						</a>
 					</section>
@@ -373,7 +396,7 @@
 						<li>Bright Pixel</li>
 						<li>Blue Print</li>
 					</ol>
-					<p class="fragment">... kan de kombieres?</p>
+					<p class="fragment">... kan de kombineres?</p>
 				</section>
 
 				<section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
@@ -390,6 +413,11 @@
 					</div>
 				</section>
 				
+
+				<section data-background="media/img/openai-chatgpt4.png">
+					
+				</section>
+
 				<section data-background="https://openaicom.imgix.net/8d14e8f0-e267-4b8b-a9f2-a79120808f5a/chatgpt.jpg?fm=auto&auto=compress,format&fit=min&rect=0,0,2048,2048&w=2560&h=2560">
 					<h2>Tak!</h2>
 				</section>
