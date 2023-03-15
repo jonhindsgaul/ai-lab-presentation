@@ -244,17 +244,18 @@
 					<pre data-id="code-animation">
 						<code class="hljs python" data-trim data-line-numbers="1-13">
 							<script type="text/template" style="font-size: 10px;">					
-								winget install --id=Anaconda.Anaconda3  -e -h --accept-source-agreements --accept-package-agreements
+								winget install -e -h --id=Python.Python.3.11 --source=winget --accept-source-agreements --accept-package-agreements
 								winget install --id=Microsoft.VisualStudioCode  -e -h --accept-source-agreements --accept-package-agreements
 								code --install-extension ms-toolsai.jupyter # reload environment variables
 								$Env:Path = [System.Environment]::GetEnvironmentVariable("Path","User") # install packages
+								python -m pip install --upgrade pip
 								pip install openai
 								pip install python-dotenv
 								pip install azure-cognitiveservices-speech
 								pip install azure-cognitiveservices-vision-computervision
 								pip install glob2
 								pip install urllib3
-								pip install uuid
+								pip install uuid							
 							</script>
 						</code>
 					</pre>
