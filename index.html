@@ -228,6 +228,40 @@
 					</section>
 				</section>
 
+
+				<section data-background-gradient="linear-gradient(to bottom, #306998, #ffd343)">
+					<h2>I skal kunne skrive kode, <br> og teste kode</h2>
+					<p>... som kan håndtere Python notebook (.ipynb) filer</p>
+					<ol>
+						<li>VS Code</li>
+						<li>Jupyter notebooks</li>
+						<li>Jeres egen foretrukne</li>
+					</ol>
+				</section>
+
+				<section data-background-gradient="linear-gradient(to bottom, #306998, #ffd343)">
+					<p>Download Python og extensions til VS Code</p>
+					<pre data-id="code-animation">
+						<code class="hljs python" data-trim data-line-numbers="1-13">
+							<script type="text/template" style="font-size: 10px;">					
+								winget install --id=Anaconda.Anaconda3  -e -h --accept-source-agreements --accept-package-agreements
+								winget install --id=Microsoft.VisualStudioCode  -e -h --accept-source-agreements --accept-package-agreements
+								code --install-extension ms-toolsai.jupyter # reload environment variables
+								$Env:Path = [System.Environment]::GetEnvironmentVariable("Path","User") # install packages
+								pip install openai
+								pip install python-dotenv
+								pip install azure-cognitiveservices-speech
+								pip install azure-cognitiveservices-vision-computervision
+								pip install glob2
+								pip install urllib3
+								pip install uuid
+							</script>
+						</code>
+					</pre>
+					<p><small>Credit: Fred</small></p>
+				</section>
+
+
 				<section data-background="https://openaicom.imgix.net/44fefabe-41f8-4dbf-9218-b1e1c44dc319/introducing-chatgpt-and-whisper-apis.jpg?fm=auto&auto=compress,format&fit=min&rect=,,,&w=2560&h=2560">
 					<section>
 						<h2>Registrér en profil hos OpenAi</h2>
@@ -296,17 +330,6 @@
 							</code>
 						</pre>
 					</section>
-
-					<section>
-						<h2>I skal kunne skrive kode, <br> og teste kode</h2>
-						<p>... som kan håndtere Python notebook (.ipynb) filer</p>
-						<ol>
-							<li>VS Code</li>
-							<li>Jupyter notebooks</li>
-							<li>Jeres egen foretrukne</li>
-						</ol>
-					</section>
-
 				</section>
 
 				<section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
@@ -326,7 +349,7 @@
 						
 						<h2>Bot Pal</h2>
 						<p>If you don't have friend...</p>
-						<a href="#/11/1" class="navigate-down">
+						<a href="#/13/1" class="navigate-down">
 							<img class="r-frame" style="background: rgba(255,255,255,0.1);" width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow">
 						</a>
 						<p id="fragment">...  create one!</p>
@@ -348,7 +371,7 @@
 						data-transition="zoom"
 						>
 						
-						<a href="#/12/1" class="navigate-down">
+						<a href="#/14/1" class="navigate-down">
 							<img class="r-frame" style="background: rgba(255,255,255,0.1);" width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow">
 						</a>
 						<h2 style="color: black">Bright Pixel</h2>
@@ -373,7 +396,7 @@
 						>
 						<h2>Blue Print</h2>
 						<p>Automatically create documentation for your code projects</p>
-						<a href="#/13/1" class="navigate-down">
+						<a href="#/15/1" class="navigate-down">
 							<img class="r-frame" style="background: rgba(255,255,255,0.1);" width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow">
 						</a>
 					</section>
