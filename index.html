@@ -1,232 +1,475 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>Let's Build Siri</title>
+    <title>Let's Build Siri</title>
 
-		<link rel="stylesheet" href="dist/custom.css">
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="dist/custom.css" />
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
-					<div class="text-container">
-						<h2 class="color-change">Hello there</h2>
-					</div>
-					
-					<p><small>Data Lab</small></p>
-					<p>Applications of AI</p>
-				</section>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section
+          data-background-gradient="linear-gradient(to bottom, #000000, #020320)"
+        >
+          <div class="text-container">
+            <h2 class="color-change">Hello there</h2>
+          </div>
 
-				<section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
-					<h2>Agenda</h2>
-					<h4>Sektion 1</h4>
-					<small>
-						<ul>
-							<li>Introduktion</li>
-							<li>OpenAI - Live demo</li>
-							<li>Anvendelser af AI</li>
-							<li>Sikkerhed</li>
-						</ul>
-					</small>
-			
-					<h4 style="margin-top: 50px;">Sektion 2</h4>
-					<small>
-						<ul>
-							<li>Best Practice Code Components</li>
-							<li>Udvikling af AI applikationer</li>
-							<li>Fremtiden</li>
-						</ul>
-					</small>
-					<h4 style="margin-top: 50px;">Aftensmad og networking</h4>
-				</section>
+          <p><small>Data Lab</small></p>
+          <p>Applications of AI</p>
+        </section>
 
-				
-				<section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
-					<img src="https://live-production.wcms.abc-cdn.net.au/eb867133b27de5c7fb05266904d97348?impolicy=wcms_crop_resize&cropH=365&cropW=547&xPos=0&yPos=297&width=862&height=575" alt="">
-				</section>
+        <section
+          data-background-gradient="linear-gradient(to bottom, #000000, #020320)"
+        >
+          <h2>Agenda</h2>
+          <h4>Sektion 1 - om AI</h4>
+          <small>
+            <ul>
+              <li>Introduktion</li>
+              <li>Live demo</li>
+              <li>Anvendelser af AI</li>
+              <li>AI omkostninger</li>
+              <li>Ansvar og sikkerhed</li>
+            </ul>
+          </small>
 
+          <h4 style="margin-top: 50px">Sektion 2 - udvikling af AI</h4>
+          <small>
+            <ul>
+			  <li>Opsætning på egen PC</li>
+              <li>Best Practice Code Components</li>
+              <li>Udvikling af AI applikationer</li>
+              <li>Fremtiden</li>
+            </ul>
+          </small>
+          <h4 style="margin-top: 50px">Aftensmad og networking</h4>
+        </section>
 
-				<section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
-					<section>
-						<h2>Introduktion</h2>
-					</section>
-					<section>
-						<h2>Hvad er en AI model?</h2>
-					</section>
-					<section>
-						<h2>Hvordan udvikler man en AI model?</h2>
-					</section>
-					<section class="fragments">
-						<h2>Hvordan anvendes AI modeller?</h2>
-					</section>
-				</section>
+        <section
+          data-background-gradient="linear-gradient(to bottom, #000000, #020320)"
+        >
+          <img
+            src="https://live-production.wcms.abc-cdn.net.au/eb867133b27de5c7fb05266904d97348?impolicy=wcms_crop_resize&cropH=365&cropW=547&xPos=0&yPos=297&width=862&height=575"
+            alt=""
+          />
+        </section>
 
+        <section
+          data-background-gradient="linear-gradient(to bottom, #000000, #020320)"
+        >
+          <section>
+            <h2>Introduktion</h2>
+          </section>
+          <section>
+            <h2>Hvad er en AI model?</h2>
+          </section>
+          <section>
+            <h2>Hvordan udvikler man en AI model?</h2>
+          </section>
+          <section class="fragments">
+            <h2>Hvordan anvendes AI modeller?</h2>
+          </section>
+        </section>
 
+        <section
+          data-background-gradient="linear-gradient(to bottom, #000000, #020320)"
+        >
+          <section>
+            <h2>OpenAI - Live Demo</h2>
 
-				<section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
-					<section>
-						<h2>OpenAI - Live Demo</h2>
+            <ul>
+              <li>
+                <a href="https://platform.openai.com/playground"
+                  >OpenAI Playground</a
+                >
+              </li>
+              <li>
+                <a href="https://discord.com/channels/662267976984297473"
+                  >Midjourney</a
+                >
+              </li>
+            </ul>
+          </section>
 
-						<ul>
-							<li>ChatGPT models</li>
-							<li><a href="https://platform.openai.com/playground">OpenAI Playground</a></li>
-							<li><a href="https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx">Bing Chat</a></li>
-						</ul>
-					</section>
+          <section id="fragments">
+            <h2>Proompting</h2>
+            <ol>
+              <li class="fragment">Vær specifik</li>
+              <li class="fragment">Anvend korrekt gramatik</li>
+              <li class="fragment">Skriv hvordan output skal se ud</li>
+              <li class="fragment">Begræns omfanget af forespørgslen</li>
+              <li class="fragment">Giv eksempler</li>
+            </ol>
+            <p class="fragment">
+              Lidt ligesom hvis man uddelegerer en opgave til en anden...
+            </p>
+          </section>
+        </section>
 
-					<section>
-						<h2>Proompting</h2>
-						<p></p>
+        <section
+          data-background-gradient="linear-gradient(to bottom, #000000, #020320)"
+        >
+          <section
+            data-auto-animate
+            data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)"
+          >
+            <h2>Kombinér AI modeller</h2>
+            <p>
+              Flere modeller kan anvendes sammen, for at skabe mere avancerede
+              programmer og services
+            </p>
+            <div class="r-hstack justify-center">
+              <div
+                data-id="box1"
+                style="
+                  background: #999;
+                  width: 50px;
+                  height: 50px;
+                  margin: 10px;
+                  border-radius: 5px;
+                "
+              ></div>
+              <div
+                data-id="box2"
+                style="
+                  background: #999;
+                  width: 50px;
+                  height: 50px;
+                  margin: 10px;
+                  border-radius: 5px;
+                "
+              ></div>
+              <div
+                data-id="box3"
+                style="
+                  background: #999;
+                  width: 50px;
+                  height: 50px;
+                  margin: 10px;
+                  border-radius: 5px;
+                "
+              ></div>
+            </div>
+          </section>
+          <section
+            data-auto-animate
+            data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)"
+          >
+            <div class="r-hstack justify-center">
+              <div
+                data-id="box1"
+                data-auto-animate-delay="0"
+                style="
+                  background: cyan;
+                  width: 150px;
+                  height: 100px;
+                  margin: 10px;
+                  border-radius: 5px;
+                "
+              ></div>
+              <div
+                data-id="box2"
+                data-auto-animate-delay="0.1"
+                style="
+                  background: magenta;
+                  width: 150px;
+                  height: 100px;
+                  margin: 10px;
+                  border-radius: 5px;
+                "
+              ></div>
+              <div
+                data-id="box3"
+                data-auto-animate-delay="0.2"
+                style="
+                  background: yellow;
+                  width: 150px;
+                  height: 100px;
+                  margin: 10px;
+                  border-radius: 5px;
+                "
+              ></div>
+            </div>
+            <p style="margin-top: 20px">Hvad skal man bruge til Siri?</p>
+            <ol style="font-size: 15px" id="fragments">
+              <li class="fragment">Noget der kan forstå tale</li>
+              <li class="fragment">Noget der kan svare på spørgsmål</li>
+              <li class="fragment">Noget der kan genere tale</li>
+            </ol>
+          </section>
+          <section
+            data-auto-animate
+            data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)"
+          >
+            <div class="r-stack">
+              <div
+                data-id="box1"
+                style="
+                  background: cyan;
+                  width: 300px;
+                  height: 300px;
+                  border-radius: 200px;
+                "
+              ></div>
+              <div
+                data-id="box2"
+                style="
+                  background: magenta;
+                  width: 200px;
+                  height: 200px;
+                  border-radius: 200px;
+                "
+              ></div>
+              <div
+                data-id="box3"
+                style="
+                  background: yellow;
+                  width: 100px;
+                  height: 100px;
+                  border-radius: 200px;
+                "
+              ></div>
+            </div>
+            <p style="margin-top: 20px">En talende chat robot</p>
+          </section>
 
-					</section>
+          <section>
+            <h2>Hvilke AI modeller findes der?</h2>
+          </section>
 
-				</section>
+          <section data-background="media/img/openai-products.jpg">
+            <div
+              style="
+                position: absolute;
+                width: 40%;
+                right: 0;
+                bottom: 2rem;
+                box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5),
+                  0 5px 25px rgba(0, 0, 0, 0.2);
+                background-color: rgba(0, 0, 0, 0.9);
+                color: #fff;
+                padding: 20px;
+                font-size: 20px;
+                text-align: left;
+              "
+            >
+              <h2>OpenAI models</h2>
+            </div>
+          </section>
 
-				<section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
-					<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
-						<h2>Kombinér AI modeller</h2>
-						<p>Flere modeller kan anvendes sammen, for at skabe mere avancerede programmer og services</p>
-						<div class="r-hstack justify-center">
-							<div data-id="box1" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
-							<div data-id="box2" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
-							<div data-id="box3" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
-						</div>
-					</section>
-					<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
-						<div class="r-hstack justify-center">
-							<div data-id="box1" data-auto-animate-delay="0" style="background: cyan; width: 150px; height: 100px; margin: 10px; border-radius: 5px;"></div>
-							<div data-id="box2" data-auto-animate-delay="0.1" style="background: magenta; width: 150px; height: 100px; margin: 10px; border-radius: 5px;"></div>
-							<div data-id="box3" data-auto-animate-delay="0.2" style="background: yellow; width: 150px; height: 100px; margin: 10px; border-radius: 5px;"></div>
-						</div>
-						<p style="margin-top: 20px;">Hvad skal man bruge til Siri?</p>
-						<ol style="font-size: 15px;" id="fragments">
-							<li class="fragment">Noget der kan forstå tale</li>
-							<li class="fragment">Noget der kan svare på spørgsmål</li>
-							<li class="fragment">Noget der kan genere tale</li>
-						</ol>
+          <section data-background="media/img/ms-1.png">
+            <div
+              style="
+                position: absolute;
+                width: 40%;
+                right: 0;
+                bottom: 2rem;
+                box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5),
+                  0 5px 25px rgba(0, 0, 0, 0.2);
+                background-color: rgba(0, 0, 0, 0.9);
+                color: #fff;
+                padding: 20px;
+                font-size: 20px;
+                text-align: left;
+              "
+            >
+              <h2>Microsoft models</h2>
+            </div>
+          </section>
+          <section data-background="media/img/ms-2.png">
+            <div
+              style="
+                position: absolute;
+                width: 40%;
+                right: 0;
+                bottom: 2rem;
+                box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5),
+                  0 5px 25px rgba(0, 0, 0, 0.2);
+                background-color: rgba(0, 0, 0, 0.9);
+                color: #fff;
+                padding: 20px;
+                font-size: 20px;
+                text-align: left;
+              "
+            >
+              <h2>Microsoft models</h2>
+            </div>
+          </section>
+          <section data-background="media/img/ms-3.png">
+            <div
+              style="
+                position: absolute;
+                width: 40%;
+                right: 0;
+                bottom: 2rem;
+                box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5),
+                  0 5px 25px rgba(0, 0, 0, 0.2);
+                background-color: rgba(0, 0, 0, 0.9);
+                color: #fff;
+                padding: 20px;
+                font-size: 20px;
+                text-align: left;
+              "
+            >
+              <h2>Microsoft models</h2>
+            </div>
+          </section>
+          <section data-background="media/img/ms-4.png">
+            <div
+              style="
+                position: absolute;
+                width: 40%;
+                right: 0;
+                bottom: 2rem;
+                box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5),
+                  0 5px 25px rgba(0, 0, 0, 0.2);
+                background-color: rgba(0, 0, 0, 0.9);
+                color: #fff;
+                padding: 20px;
+                font-size: 20px;
+                text-align: left;
+              "
+            >
+              <h2>Microsoft models</h2>
+            </div>
+          </section>
+        </section>
 
-					</section>
-					<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
-						<div class="r-stack">
-							<div data-id="box1" style="background: cyan; width: 300px; height: 300px; border-radius: 200px;"></div>
-							<div data-id="box2" style="background: magenta; width: 200px; height: 200px; border-radius: 200px;"></div>
-							<div data-id="box3" style="background: yellow; width: 100px; height: 100px; border-radius: 200px;"></div>
-						</div>
-						<p style="margin-top: 20px;">En talende chat robot</p>
-					</section>
+        <section
+          data-background-gradient="linear-gradient(to bottom, #000000, #020320)"
+        >
+          <section>
+            <h2>Applikationer som anvender AI</h2>
+            <ul>
+              <li>
+                <a
+                  href="https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx"
+                  >Bing Chat</a
+                >
+              </li>
+              <li>Github Copilot</li>
+              <li><a href="https://www.bemyeyes.com/">Be my eyes</a></li>
+            </ul>
+          </section>
+        </section>
+        <section
+          data-background-gradient="linear-gradient(to bottom, #000000, #020320)"
+        >
+          <section>
+            <h2>Ansvar og sikkerhed</h2>
+          </section>
+          <section>
+            <h2>Microsoft's responsible AI use</h2>
+            <img
+              src="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/innovate/best-practices/media/responsible-ai-principles.png"
+              alt="Microsoft reponsible AI"
+            />
+          </section>
+          <section id="fragments">
+            <h2>Etik</h2>
+            <p class="fragment">
+              A father's child, a mother's child, yet no one's son. Who am I?
+            </p>
+            <p class="fragment">Answer: Daugther</p>
+          </section>
+          <section>
+            <h2></h2>
+            <img
+              style="height: 50%"
+              src="/media/img/AI-ethics-example001.png"
+              alt=""
+            />
+          </section>
+          <section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
+            <h2>Sikkerhed</h2>
+            <ul id="fragments">
+              <li class="fragment">Forkert information</li>
+              <li class="fragment">Privatliv og fortrolighed</li>
+              <li class="fragment">Plagiarism</li>
+            </ul>
+          </section>
+        </section>
 
+		<section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
+			<section>
+				<h2>Omkostninger ved AI</h2>
 
+				<p>Det er altid pay-as-you-go</p>
+				<ul>
+					<li><a href="https://openai.com/pricing">ChatGPT Pricing</a></li>
+					<li><a href="https://azure.microsoft.com/en-us/pricing/details/cognitive-services/#pricing">Azure Pricing</a></li>
+				</ul>
 
-					<section>
-						<h2>Hvilke AI modeller findes der?</h2>
-					</section>
+			</section>
+		</section>
 
-					<section data-background="media/img/openai-products.jpg" >
-						<div style="position: absolute; width: 40%; right: 0; bottom: 2rem; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
-							<h2>OpenAI models</h2>
-						</div>
-					</section>
+		<!-- Break -->
+		<!-- Break -->
+		<!-- Break -->
+		<!-- Break -->
+		<!-- Break -->
+		<!-- Break -->
+		<!-- Break -->
+		<!-- Break -->
 
+        <section
+          data-background-gradient="linear-gradient(to bottom, #000000, #020320)"
+        >
+          <h2>Break - 15 min</h2>
+          <div class="text-container">
+            <p id="typing-text"></p>
+          </div>
+        </section>
 
-					<section data-background="media/img/ms-1.png">
-						<div style="position: absolute; width: 40%; right: 0; bottom: 2rem; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
-							<h2>Microsoft models</h2>
-						</div>
-					</section>
-					<section data-background="media/img/ms-2.png">
-						<div style="position: absolute; width: 40%; right: 0; bottom: 2rem; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
-							<h2>Microsoft models</h2>
-						</div>
-					</section>
-					<section data-background="media/img/ms-3.png">
-						<div style="position: absolute; width: 40%; right: 0; bottom: 2rem; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
-							<h2>Microsoft models</h2>
-						</div>
-					</section>
-					<section data-background="media/img/ms-4.png">
-						<div style="position: absolute; width: 40%; right: 0; bottom: 2rem; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
-							<h2>Microsoft models</h2>
-						</div>
-					</section>
+		<!-- Break -->
+		<!-- Break -->
+		<!-- Break -->
+		<!-- Break -->
+		<!-- Break -->
+		<!-- Break -->
+		<!-- Break -->
+		<!-- Break -->
 
-					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-						<h2>Wow!!!</h2>
-					</section>
+        <section
+          data-background-gradient="linear-gradient(to bottom, #000000, #020320)"
+        >
+          <section>
+            <h2>Hvordan bruger man egentlig AI modeller i kode?</h2>
+          </section>
 
-				</section>
+          <section id="fragments">
+            <p>
+              Mange AI modeller udstilles igennem API end-points, dvs. et link
+              på internettet.
+            </p>
+            <p class="fragment">
+              Et API end-point kan anvendes af de fleste programmeringssprog.
+            </p>
+            <p class="fragment">
+              Til mange programmeringssprog findes der en SDK.
+            </p>
+          </section>
+        </section>
 
-				<section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
-					<section>
-						<h2>Applikationer som anvender AI</h2>
-						<ul>
-							<li><a href="https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx">Bing Chat</a></li>
-							<li>Github Copilot</li>
-							<li><a href="https://docs.github.com/en/site-policy/privacy-policies/github-copilot-for-business-privacy-statement">Copilot for businesssss</a></li>
-							<li><a href="https://www.bemyeyes.com/about">Be my eyes</a></li>
-							<li><a href="https://discord.com/channels/662267976984297473">Midjourney</a></li>	
-						</ul>
-					</section>
-				</section>
-
-
-				<section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
-					<section>
-						<h2>Ansvar og sikkerhed</h2>
-					</section>
-					<section>
-						<h2>Micrsoft's AI reponsible AI use</h2>
-						<img src="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/innovate/best-practices/media/responsible-ai-principles.png" alt="Microsoft reponsible AI">
-					</section>
-					<section id="fragments">
-						<h2>Etik</h2>
-						<p class="fragment">A father's child, a mother's child, yet no one's son. Who am I?</p>
-						<p class="fragment">Answer: Daugther</p>
-					</section>
-					<section>
-						<h2></h2>
-						<img style="height: 50%;" src="/media/img/AI-ethics-example001.png" alt="">
-					</section>
-					<section>
-						<h2>Forklaringsevne</h2>
-					</section>
-				</section>
-
-				<section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
-					<h2>Break - 15 min</h2>
-						<div class="text-container">
-							<p id="typing-text"></p>
-						</div>
-				</section>
-
-				<section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
-					<section>
-						<h2>
-							Hvordan bruger man egentlig AI modeller i kode?
-						</h2>
-					</section>
-
-					<section id="fragments">
-						<p>Mange AI modeller udstilles igennem API end-points, dvs. et link på internettet.</p>
-						<p class="fragment">Et API end-point kan anvendes af de fleste programmeringssprog.</p>
-						<p class="fragment">Til mange programmeringssprog findes der en SDK.</p>
-					</section>
-				</section>
-
-				<section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
-					<section data-auto-animate id="fragments">
-						<h2 data-id="code-title">
-							OpenAI's SDK til Python
-						</h2>
-						<pre data-id="code-animation" class="fragment">
+        <section
+          data-background-gradient="linear-gradient(to bottom, #000000, #020320)"
+        >
+          <section data-auto-animate id="fragments">
+            <h2 data-id="code-title">OpenAI's SDK til Python</h2>
+            <pre data-id="code-animation" class="fragment">
 							<code class="hljs python" data-trim data-line-numbers="|1|3-4|6|8|10|11-17|20|6-20">
 								<script type="text/template">
 									import openai
@@ -252,38 +495,58 @@
 								</script>
 							</code>
 						</pre>
-						<a class="fragment" href="https://platform.openai.com/docs/api-reference/completions/create">Documentation</a>
-					</section>
+            <a
+              class="fragment"
+              href="https://platform.openai.com/docs/api-reference/completions/create"
+              >Documentation</a
+            >
+          </section>
 
-					<section>
-						<h2>For dokumentation</h2>
-						<a href="https://platform.openai.com/docs/api-reference/introduction">OpenAI SDK</a>
-						<a href="https://platform.openai.com/docs/models/overview">OpenAI modeller</a>
-					</section>
-				</section>
+          <section>
+            <h2>For dokumentation</h2>
+            <a
+              href="https://platform.openai.com/docs/api-reference/introduction"
+              >OpenAI SDK</a
+            >
+            <a href="https://platform.openai.com/docs/models/overview"
+              >OpenAI modeller</a
+            >
+          </section>
+        </section>
 
-				<section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
-					<h2>Opsætning</h2>
-				</section>
+        <section
+          data-background-gradient="linear-gradient(to bottom, #000000, #020320)"
+        >
+          <h2>Opsætning</h2>
+        </section>
 
-				<section data-background-gradient="linear-gradient(to bottom, #306998, #ffd343)">
-
-					<section>
-						<h2>Setup Python</h2>
-						<a href="#/8/1" class="navigate-down">
-							<img src="https://www.python.org/static/community_logos/python-logo-master-v3-TM.png" alt="Python logo" height="200">
-						</a>
-
-					</section>
-					<section>
-						<h2>Click to install Python</h2>
-						<a href="https://www.python.org/downloads/" style="cursor: pointer;">
-							<img class="r-frame" style="background: rgba(255,255,255,0.1);" width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Installér python pakker</h2>
-						<pre data-id="code-animation">
+        <section
+          data-background-gradient="linear-gradient(to bottom, #306998, #ffd343)"
+        >
+          <section>
+            <h2>Setup Python</h2>
+              <img
+                src="https://www.python.org/static/community_logos/python-logo-master-v3-TM.png"
+                alt="Python logo"
+                height="200"
+              />
+          </section>
+          <section>
+            <h2>Click to install Python</h2>
+            <a href="https://www.python.org/downloads/" style="cursor: pointer">
+              <img
+                class="r-frame"
+                style="background: rgba(255, 255, 255, 0.1)"
+                width="178"
+                height="238"
+                data-src="https://static.slid.es/reveal/arrow.png"
+                alt="Down arrow"
+              />
+            </a>
+          </section>
+          <section>
+            <h2>Installér python pakker</h2>
+            <pre data-id="code-animation">
 							<code class="hljs python" data-trim data-line-numbers="1">
 								<script type="text/template">
 									pip install <package>
@@ -295,33 +558,39 @@
 								</script>
 							</code>
 						</pre>
-						<p>Packages:</p>
-						<ul>
-							<li>openai</li>
-							<li>python-dotenv</li>
-							<li>azure-cognitiveservices-speech</li>
-							<li>azure-cognitiveservices-vision-computervision</li>
-							<li>glob2</li>
-							<li>urllib3</li>
-							<li>uuid</li>
-						</ul>
-					</section>
-				</section>
+            <p>Packages:</p>
+            <ul>
+              <li>openai</li>
+              <li>python-dotenv</li>
+              <li>azure-cognitiveservices-speech</li>
+              <li>azure-cognitiveservices-vision-computervision</li>
+              <li>glob2</li>
+              <li>urllib3</li>
+              <li>uuid</li>
+            </ul>
+          </section>
+        </section>
 
+        <section
+          data-background-gradient="linear-gradient(to bottom, #306998, #ffd343)"
+        >
+          <h2>
+            I skal kunne skrive kode, <br />
+            og teste kode
+          </h2>
+          <p>... som kan håndtere Python notebook (.ipynb) filer</p>
+          <ol>
+            <li>VS Code</li>
+            <li>Jupyter notebooks</li>
+            <li>Jeres egen foretrukne</li>
+          </ol>
+        </section>
 
-				<section data-background-gradient="linear-gradient(to bottom, #306998, #ffd343)">
-					<h2>I skal kunne skrive kode, <br> og teste kode</h2>
-					<p>... som kan håndtere Python notebook (.ipynb) filer</p>
-					<ol>
-						<li>VS Code</li>
-						<li>Jupyter notebooks</li>
-						<li>Jeres egen foretrukne</li>
-					</ol>
-				</section>
-
-				<section data-background-gradient="linear-gradient(to bottom, #306998, #ffd343)">
-					<p>Download Python og extensions til VS Code</p>
-					<pre data-id="code-animation">
+        <section
+          data-background-gradient="linear-gradient(to bottom, #306998, #ffd343)"
+        >
+          <p>Download Python og extensions til VS Code</p>
+          <pre data-id="code-animation">
 						<code class="hljs python" data-trim data-line-numbers="1-13">
 							<script type="text/template" style="font-size: 10px;">					
 								winget install -e -h --id=Python.Python.3.11 --source=winget --accept-source-agreements --accept-package-agreements
@@ -339,258 +608,318 @@
 							</script>
 						</code>
 					</pre>
-					<p><small>Credit: Fred</small></p>
-				</section>
+        </section>
+
+        <section
+          data-background="https://openaicom.imgix.net/44fefabe-41f8-4dbf-9218-b1e1c44dc319/introducing-chatgpt-and-whisper-apis.jpg?fm=auto&auto=compress,format&fit=min&rect=,,,&w=2560&h=2560"
+        >
+          <section>
+            <h2>Registrér en profil hos OpenAi</h2>
+            <a
+              href="https://auth0.openai.com/u/signup/identifier?state=hKFo2SA5eFRleENmSUtldFZFY0U4MVZpdnJrS3hxX2c2R2MwbKFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIE1DOUl4d2RmSEVGSXl1bG1vZkZ0b2xpcGljMnlPWGxto2NpZNkgRFJpdnNubTJNdTQyVDNLT3BxZHR3QjNOWXZpSFl6d0Q"
+            >
+              <img
+                style="background: rgba(255, 255, 255, 0.1); cursor: pointer"
+                height="100"
+                data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/OpenAI_Logo.svg/1200px-OpenAI_Logo.svg.png"
+              />
+            </a>
+          </section>
+          <section
+            data-background-gradient="linear-gradient(to bottom, #000000, #020320)"
+          >
+            <h2>Find API nøglerne</h2>
+            <ol>
+              <li style="font-size: 15px">
+                Login på OpenAI platformen
+                <a href="http://platform.openai.com/">her</a>
+              </li>
+              <li style="font-size: 15px">
+                Tryk i din profil oppe i højre hjørne (billede)
+              </li>
+              <li style="font-size: 15px">Tryk "Create new secrect key"</li>
+            </ol>
+            <img src="media/img/openai-api.png" height="500" alt="" />
+          </section>
+
+          <section
+            data-background-gradient="linear-gradient(to bottom, #000000, #020320)"
+          >
+            <h2>Huske at gemme jeres API key</h2>
+            <img src="media/img/openai-apikey.png" alt="" />
+          </section>
+        </section>
+		
+		<section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
+			<section>
+				<h2>Opret Azure ressourcer</h2>
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Microsoft_Azure_Logo.svg/1080px-Microsoft_Azure_Logo.svg.png" alt="">
+			</section>
+			<section>
+				<h4>Azure Cognitive Services</h4>
+				<a href="https://learn.microsoft.com/en-us/azure/cognitive-services/what-are-cognitive-services">
+					<img src="https://learn.microsoft.com/en-us/windows/images/azure-cognitive-services.png" alt="">
+				</a>
+			</section>
+			<section>
+				<h4>Azure Computer Vision</h4>
+				<a href="https://learn.microsoft.com/en-us/azure/cognitive-services/computer-vision/overview">
+					<img src="data:image/jpeg;base64,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" alt="">
+				</a>
+			</section>
+		</section>
 
 
-				<section data-background="https://openaicom.imgix.net/44fefabe-41f8-4dbf-9218-b1e1c44dc319/introducing-chatgpt-and-whisper-apis.jpg?fm=auto&auto=compress,format&fit=min&rect=,,,&w=2560&h=2560">
-					<section>
-						<h2>Registrér en profil hos OpenAi</h2>
-						<a href="https://auth0.openai.com/u/signup/identifier?state=hKFo2SA5eFRleENmSUtldFZFY0U4MVZpdnJrS3hxX2c2R2MwbKFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIE1DOUl4d2RmSEVGSXl1bG1vZkZ0b2xpcGljMnlPWGxto2NpZNkgRFJpdnNubTJNdTQyVDNLT3BxZHR3QjNOWXZpSFl6d0Q">
-							<img style="background: rgba(255,255,255,0.1); cursor: pointer;" height="100" data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/OpenAI_Logo.svg/1200px-OpenAI_Logo.svg.png">
-						</a>
-					</section>
-					<section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
-						<h2>Find API nøglerne</h2>
-						<ol>
-							<li style="font-size: 15px;">Login på OpenAI platformen <a href="http://platform.openai.com/">her</a></li>
-							<li style="font-size: 15px;">Tryk i din profil oppe i højre hjørne (billede)</li>
-							<li style="font-size: 15px;">Tryk "Create new secrect key"</li>
-						</ol>
-						<img src="media/img/openai-api.png" height="500" alt="">
-					</section>
-
-					<section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
-						<h2>Huske at gemme jeres API key</h2>
-						<img src="media/img/openai-apikey.png" alt="">
-					</section>
-				</section>
 
 
+        <section
+		data-background-gradient="linear-gradient(to bottom, #000000, #020320)"
+        >
+          <section
+            data-background-gradient="linear-gradient(to bottom, #ffffff, #5DA685)"
+          >
+            <div>
+              <a href="https://bestpractice.copenhagendata.com/overview">
+                <img
+                  src="https://bestpractice.copenhagendata.com/assets/best_practice_original.svg"
+                  width="700"
+                  alt="Github logo"
+                  height="300"
+                />
+              </a>
+            </div>
+            <p>Download Repository</p>
+          </section>
+          <section>
+            <h2>En project mappe har følgende struktur</h2>
+            <img src="media/img/python-opsætning.png" alt="" />
+            <p><small>I skal selv oprette filen .env</small></p>
+          </section>
 
-				<section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
-					<section>
-						<h2>Download repository</h2>
-						<div style="display: flex; justify-content: space-between; margin-top: 1.2rem;">
-							<div>
-								<h4>Github</h4>
-								<a href="https://github.com/jonhindsgaul/ai-lab">
-									<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="200" alt="Github logo" height="200">
-								</a>
-							</div>
-							<img src="https://media.tenor.com/zP8THQcabS8AAAAC/gordon-ramsay-choice.gif" alt="">
-							<div>
-								<h4>Zip-fil</h4>
-								<a href="https://github.com/jonhindsgaul/ai-lab/archive/refs/heads/main.zip">
-									<img src="https://cdn-icons-png.flaticon.com/256/28/28814.png" alt="" width="200" style="background-color: white;">
-								</a>
-							</div>
-						</div>
-					</section>
-					<section>
-						<h2>En project mappe har følgende struktur</h2>
-						<img src="media/img/python-opsætning.png" alt="">
-						<p><small>I skal selv oprette filen .env</small></p>
-					</section>
-
-					<section>
-						<h2>Opsæt environment fil</h2>
-						<p>I .env filen, skal i oprette følgende variable. OpenAI key skal i selv oprette. COV/COG keys får I tildelt.</p>
-						<pre data-id="code-animation">
+          <section>
+            <h2>Opsæt environment fil</h2>
+            <p>
+              I .env filen, skal i oprette følgende variable. OpenAI key skal i
+              selv oprette. COV/COG keys får I tildelt.
+            </p>
+            <pre data-id="code-animation">
 							<code class="hljs python" data-trim data-line-numbers="1-8">
 								<script type="text/template" style="font-size: 10px;">					
-									COG_SERVICE_KEY=your_cognitive_services_key
-									COG_SERVICE_REGION=westeurope
+									OPENAI_API_KEY=''
 
-									OPENAI_API_KEY=your_api_key
-
-									COV_SERVICE_KEY=your_computer_vision_key
-									COV_SERVICE_REGION=westeurope
-									COV_SERVICE_ENDPOINT=https://cvsirilab.cognitiveservices.azure.com
+									AZURE_COG_REGION=''
+									AZURE_COG_KEY=''
+									
+									AZURE_COV_ENDPOINT=''
+									AZURE_COV_KEY=''
 								</script>
 							</code>
 						</pre>
-					</section>
-				</section>
+          </section>
+        </section>
 
-				<section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
-					<section id="fragments">
-						<h2>Opgaverne</h2>
-						<p>I dag handler det om at arbejde med eksisterende modeller, så vi kan se hvordan de virker.</p>
-						<p class="fragment">Fokus er på anvendelse, og der vil ikke være behov for at skrive meget kode, men for at forstå koden!</p>
-					</section>
-				</section>
+        <section
+          data-background-gradient="linear-gradient(to bottom, #000000, #020320)"
+        >
+          <section id="fragments">
+            <h2>Opgaverne</h2>
+            <p>
+              I dag handler det om at arbejde med eksisterende modeller, så vi
+              kan se hvordan de virker.
+            </p>
+            <p class="fragment">
+              Fokus er på anvendelse, og der vil ikke være behov for at skrive
+              meget kode, men for at forstå koden!
+            </p>
+          </section>
+        </section>
 
-				<section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
-					<section 
-						class="fragments" 
-						data-background-opacity="0.5" 
-						data-background="https://openaicom.imgix.net/13c810cb-0592-442d-9580-714838b8ed28/whisper.jpg?fm=auto&auto=compress,format&fit=min&rect=119,519,1800,1010&w=1280&h=718"
-						>
-						
-						<h2>Best Pal</h2>
-						<p>If you don't have friend...</p>
-						<a href="#/13/1" class="navigate-down">
-							<img class="r-frame" style="background: rgba(255,255,255,0.1);" width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow">
-						</a>
-						<p id="fragment">...  create one!</p>
-					</section>
-					<section>
-						<h2>Instruktioner</h2>
-						<p>Der skal bygges følgende komponenter til Best Pal</p>
-						<ol>
-							<li>Speech to text</li>
-							<li>Chat bot</li>
-							<li>Speech synthesis</li>
-						</ol>
-					</section>
-				</section>
+        <section
+          data-background-gradient="linear-gradient(to bottom, #000000, #020320)"
+        >
+          <section
+            class="fragments"
+            data-background-opacity="0.5"
+            data-background="https://openaicom.imgix.net/13c810cb-0592-442d-9580-714838b8ed28/whisper.jpg?fm=auto&auto=compress,format&fit=min&rect=119,519,1800,1010&w=1280&h=718"
+          >
+            <h2>Best Pal</h2>
+            <p>If you don't have friend...</p>
+              <img
+                class="r-frame"
+                style="background: rgba(255, 255, 255, 0.1)"
+                width="178"
+                height="238"
+                data-src="https://static.slid.es/reveal/arrow.png"
+                alt="Down arrow"
+              />
+            <p id="fragment">... create one!</p>
+          </section>
+          <section>
+            <h2>Instruktioner</h2>
+            <p>Der skal bygges følgende komponenter til Best Pal</p>
+            <ol>
+              <li>Speech to text</li>
+              <li>Chat bot</li>
+              <li>Speech synthesis</li>
+            </ol>
+          </section>
+        </section>
 
-				<section data-transition="zoom" data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
-					<section 
-						data-background="https://openaicom.imgix.net/5f1ce4c2-c06b-4d4d-828a-e90c89680db4/dall-e-now-available-without-waitlist.jpg?fm=auto&auto=compress,format&fit=min&rect=0,0,1024,1024&w=2560&h=2560"
-						data-transition="zoom"
-						>
-						
-						<a href="#/14/1" class="navigate-down">
-							<img class="r-frame" style="background: rgba(255,255,255,0.1);" width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow">
-						</a>
-						<h2 style="color: black">Bright Pixel</h2>
-						<p style="color: black">Create images! <br> And analyse them!</p>
-					</section>
-					<section data-transition="zoom">
-						<h2>Instruktioner</h2>
-						<p>Der skal bygges følgende komponenter til Bright Pixel</p>
-						<ol>
-							<li>Forespørg brugeren et input</li>
-							<li>Brug DALL-E API</li>
-							<li>Gem billede til fil</li>
-							<li>Tag og analysér billedet med Azure Computer Vision</li>
-						</ol>
-					</section>
-				</section>
+        <section
+          data-transition="zoom"
+          data-background-gradient="linear-gradient(to bottom, #000000, #020320)"
+        >
+          <section
+            data-background="https://openaicom.imgix.net/5f1ce4c2-c06b-4d4d-828a-e90c89680db4/dall-e-now-available-without-waitlist.jpg?fm=auto&auto=compress,format&fit=min&rect=0,0,1024,1024&w=2560&h=2560"
+            data-transition="zoom"
+          >
+              <img
+                class="r-frame"
+                style="background: rgba(255, 255, 255, 0.1)"
+                width="178"
+                height="238"
+                data-src="https://static.slid.es/reveal/arrow.png"
+                alt="Down arrow"
+              />
+            <h2 style="color: black">Bright Pixel</h2>
+            <p style="color: black">
+              Create images! <br />
+              And analyse them!
+            </p>
+          </section>
+          <section data-transition="zoom">
+            <h2>Instruktioner</h2>
+            <p>Der skal bygges følgende komponenter til Bright Pixel</p>
+            <ol>
+              <li>DALL-E til generering af billeder</li>
+              <li>Gem billede</li>
+              <li>Tag og analysér billedet med Azure Computer Vision</li>
+            </ol>
+          </section>
+        </section>
 
-				<section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
-					<section 
-						data-background="https://openaicom.imgix.net/d0a85fe2-47d9-4903-9304-11953c9e6462/gpt-3-edit-insert.jpg?fm=auto&auto=compress,format&fit=min&rect=0,0,2048,2048&w=2560&h=2560"
-						data-transition="concave"
-						>
-						<h2>Blue Print</h2>
-						<p>Automatically create documentation for your code projects</p>
-						<a href="#/15/1" class="navigate-down">
-							<img class="r-frame" style="background: rgba(255,255,255,0.1);" width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section id="fragments" data-transition="concave">
-						<h2>Instruktioner</h2>
-						<ol>
-							<li>Vælg mappe med filer, som skal dokumenteres</li>
-							<li>Indlæs alle relevante filer fra mappen</li>
-							<li>For hver fil, brug openai til at skrive dokumentation</li>
-							<li>Gem dokumentationen i markdown i en eller flere filer</li>
-							<li class="fragment">Indbyg program i Azure DevOps release pipeline</li>
-						</ol>
-					</section>
-				</section>
+        <section
+          data-background-gradient="linear-gradient(to bottom, #000000, #020320)"
+        >
+          <section
+            data-background="https://openaicom.imgix.net/d0a85fe2-47d9-4903-9304-11953c9e6462/gpt-3-edit-insert.jpg?fm=auto&auto=compress,format&fit=min&rect=0,0,2048,2048&w=2560&h=2560"
+            data-transition="concave"
+          >
+            <h2>Blue Print</h2>
+            <p>Automatically create documentation for your code projects</p>
+              <img
+                class="r-frame"
+                style="background: rgba(255, 255, 255, 0.1)"
+                width="178"
+                height="238"
+                data-src="https://static.slid.es/reveal/arrow.png"
+                alt="Down arrow"
+              />
+          </section>
+          <section id="fragments" data-transition="concave">
+            <h2>Instruktioner</h2>
+            <ol>
+              <li>Vælg mappe med filer, som skal dokumenteres</li>
+              <li>Indlæs alle relevante filer fra mappen</li>
+              <li>For hver fil, brug openai til at skrive dokumentation</li>
+              <li>Gem dokumentationen i markdown i en eller flere filer</li>
+              <!-- <li class="fragment">
+                Indbyg program i Azure DevOps release pipeline
+              </li> -->
+            </ol>
+          </section>
+        </section>
 
-				<section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
-					<h2>De 3 learning journeys</h2>
-					<ol>
-						<li>Best Pal</li>
-						<li>Bright Pixel</li>
-						<li>Blue Print</li>
-					</ol>
-					<p class="fragment">... kan de kombineres?</p>
-				</section>
+        <section
+          data-background-gradient="linear-gradient(to bottom, #000000, #020320)"
+		  id="fragments"
+        >
+          <h2>Fremtiden</h2>
+          <ol>
+            <li class="fragment">UI/UX bliver til en chat-box</li>
+            <li class="fragment">Domæne specilisering - det vi har set i dag</li>
+            <li class="fragment">Autonomous agents</li>
+          </ol>
+        </section>
 
-				<section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
-					<img src="https://gifdb.com/images/high/jimmy-fallon-so-do-it-9ldyvpw7lfypufo9.gif" alt="">
-				</section>
+        <section
+          data-background="https://openaicom.imgix.net/8d14e8f0-e267-4b8b-a9f2-a79120808f5a/chatgpt.jpg?fm=auto&auto=compress,format&fit=min&rect=0,0,2048,2048&w=2560&h=2560"
+        >
+          <h2>Q&A</h2>
+        </section>
+      </div>
+    </div>
 
-				<section data-background="https://openaicom.imgix.net/c3ca91b1-f41d-4ba0-84b2-84b2b9c0530e/dall-e-api-now-available-in-public-beta.jpg?fm=auto&auto=compress,format&fit=min&rect=,,,&w=2560&h=2560">
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
 
-				</section>
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+    <script>
+      const typingText = document.getElementById("typing-text");
+      const phrases = [
+        "Use the break to network with other attendees and exchange ideas on AI-related topics.",
+        "Take a walk or stretch your legs to help rejuvenate your mind and body.",
+        "Grab a healthy snack or a cup of coffee to stay energized and focused during the seminar.",
+        "Reflect on what you've learned so far and consider any questions you may have for the speaker or panelists.",
+        "Explore the venue or nearby areas to get a change of scenery and clear your mind.",
+        "Participate in fun activities such as games or puzzles to help reduce stress and promote mental agility.",
+        "Check your emails or make important phone calls during the break if necessary.",
+        "Share your experiences with other attendees and learn from their challenges and successes in AI.",
+        "Take notes on what you've learned so far and review them during the break to reinforce your understanding.",
+        "Visit the exhibit booths to learn about the latest AI technologies and products.",
+        "Take advantage of any mentoring or coaching opportunities offered during the break to enhance your skills.",
+        "Take a break from screens and engage in a conversation with other attendees to build relationships and expand your network.",
+        "Use the break to meditate or practice mindfulness to reduce stress and improve mental clarity.",
+        "Join a group discussion or breakout session to deepen your knowledge on specific AI topics.",
+        "Relax and enjoy the break, knowing that it will help you stay focused and engaged throughout the rest of the seminar.",
+        "I have been looking at these messages for a while now...",
+        "Ainception is a term used to describe the concept of an AI creating another AI",
+        "Will I retire before ChatGPT 7?",
+        "Or will I retire because of ChatGPT 7?",
+      ];
 
-				<section data-background-gradient="linear-gradient(to bottom, #000000, #020320)">
-					<div class="text-container">
-						<h2 id="typing-text"></h2>
-					</div>
-				</section>
-				
+      let phraseIndex = 0;
+      let charIndex = 0;
 
-				<section data-background="https://openaicom.imgix.net/8d14e8f0-e267-4b8b-a9f2-a79120808f5a/chatgpt.jpg?fm=auto&auto=compress,format&fit=min&rect=0,0,2048,2048&w=2560&h=2560">
-					<h2>Tak!</h2>
-				</section>
-			</div>
-		</div>
+      function type() {
+        if (charIndex < phrases[phraseIndex].length) {
+          typingText.textContent += phrases[phraseIndex].charAt(charIndex);
+          charIndex++;
+          setTimeout(type, 200);
+        } else {
+          setTimeout(erase, 5000);
+        }
+      }
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+      function erase() {
+        if (charIndex > 0) {
+          typingText.textContent = phrases[phraseIndex].substring(
+            0,
+            charIndex - 1
+          );
+          charIndex--;
+          setTimeout(erase, 100);
+        } else {
+          phraseIndex++;
+          if (phraseIndex >= phrases.length) {
+            phraseIndex = 0;
+          }
+          setTimeout(type, 1000);
+        }
+      }
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-		<script>
-			const typingText = document.getElementById('typing-text');
-			const phrases = [
-				"Use the break to network with other attendees and exchange ideas on AI-related topics.",
-				"Take a walk or stretch your legs to help rejuvenate your mind and body.",
-				"Grab a healthy snack or a cup of coffee to stay energized and focused during the seminar.",
-				"Reflect on what you've learned so far and consider any questions you may have for the speaker or panelists.",
-				"Explore the venue or nearby areas to get a change of scenery and clear your mind.",
-				"Participate in fun activities such as games or puzzles to help reduce stress and promote mental agility.",
-				"Check your emails or make important phone calls during the break if necessary.",
-				"Share your experiences with other attendees and learn from their challenges and successes in AI.",
-				"Take notes on what you've learned so far and review them during the break to reinforce your understanding.",
-				"Visit the exhibit booths to learn about the latest AI technologies and products.",
-				"Take advantage of any mentoring or coaching opportunities offered during the break to enhance your skills.",
-				"Take a break from screens and engage in a conversation with other attendees to build relationships and expand your network.",
-				"Use the break to meditate or practice mindfulness to reduce stress and improve mental clarity.",
-				"Join a group discussion or breakout session to deepen your knowledge on specific AI topics.",
-				"Relax and enjoy the break, knowing that it will help you stay focused and engaged throughout the rest of the seminar.",
-				"I have been looking at these messages for a while now...",
-				"Ainception is a term used to describe the concept of an AI creating another AI",
-				"Will I retire before ChatGPT 7?",
-				"Or will I retire because of ChatGPT 7?",
-			];
-
-			let phraseIndex = 0;
-			let charIndex = 0;
-
-			function type() {
-			if (charIndex < phrases[phraseIndex].length) {
-				typingText.textContent += phrases[phraseIndex].charAt(charIndex);
-				charIndex++;
-				setTimeout(type, 200);
-			} else {
-				setTimeout(erase, 5000);
-			}
-			}
-
-			function erase() {
-			if (charIndex > 0) {
-				typingText.textContent = phrases[phraseIndex].substring(0, charIndex-1);
-				charIndex--;
-				setTimeout(erase, 100);
-			} else {
-				phraseIndex++;
-				if (phraseIndex >= phrases.length) {
-				phraseIndex = 0;
-				}
-				setTimeout(type, 1000);
-			}
-			}
-
-			type();
-		</script>
-	</body>
+      type();
+    </script>
+  </body>
 </html>
